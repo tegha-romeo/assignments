@@ -12,7 +12,7 @@ A hard link is a special  file which points directly to the inode of the origina
 cd /etc && find *.conf -ctime 7
 The cron daemon runs continuosly and wakes up every minute to check a set of tables known as crontabs to find tasks to execute. 
 B
-      
+blkid     
 Both ext3 and ext4 file systems support journaling but ext4 filesystems  are designed for high capacity storage and can support files more than 4GB and the default max size of a single file in ext4 is 16TB.
 First use the lsblk on your terminal  to list all block devices and choose one of them on which the partittion will be created.Type the command fdisk <block_device>. Then type the command n for new partition and then follow the instructions that follows to set the partition the way you want it to be,(instruction such as the type of partion  (either primery or extended), first and last sector sizes. Then type the p command after successfully creating the partition to display the partition table. To create the filesystem type the t command and follow the instructions to find which number is assigned to the ext4 filesystem then enter the number to create the  filesystem.To mount the partition first create the directory data using  mkdir data and  then mount <new_partion> data  
 The /etc/fstab file contains information on all filesystems mounted on your system or machine.command:mount -t ext4
