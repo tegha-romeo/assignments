@@ -1,1 +1,14 @@
+D
+The pre-operating steps to boot performed by a system with BIOS are the POST process, activation of basic components to  load the system, loading of the first stage of the bootloader from the MBR and the calling of the second stage of the bootloader by the first stage whereas for a system with UEFI,the POST process is done, then the UEFI reads the definitions stored in the NVRAM followed by the activation of the basic components to load the system and then loading of the loading of the kernel to start the o.s. Also, the UEFI identifies partitions and read many filesystems which is not done by the BIOS and also the BIOS relies on the MBR but the UEFI does not.
+**lsmod** to list all currently loaded modules and **modprobe dummy** to load the module dummy
+The /proc directory found in the root directory contains sudo files that contain information about system processes and resources. Here, we can find files such as the /proc/locks and /proc/uptime while the /sys directory also found in the root directory contains info to interact with the kernel, some sub directories found in it include the kernel,module,block and firmware directories.
+C
+the apt provides a high-level commandline interface for the package management system
 
+
+B 
+cat /var/log/syslog | grep error |  wc -l
+A hard link is a special  file which points directly to the inode of the original file on the disk. Deleting one of the hardlinks of a file does not delete the actual data until all the hardlinks are deleted and can not be  created accross different filesystems as symbolic links while symbolic links are special files that point to the path of another file.If the original file is deleted the link becomes broken as it points to a location that is o more.
+find 
+The cron daemon runs continuosly and wakes up every minute to check a set of tables known as crontabs to find tasks to execute.
+B
